@@ -214,7 +214,8 @@ function creator_action_5() {
 	local version_to="define('INSTALL_VERSION', '\1preview$version');"
 	
 	echo "Update installer/index.php"
-	cat "$2/installer/index.php" | sed "s/$md5_from/$md5_to/" | sed "s/$version_from/$version_to/" > "$2/installer/index.php"
+	cat "$2/installer/index.php" | sed "s/$md5_from/$md5_to/" | sed "s/$version_from/$version_to/" > "$2/installer/index.tmp"
+	mv "$2/installer/index.tmp" "$2/installer/index.php"
 }
 
 #
