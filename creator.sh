@@ -120,8 +120,8 @@ function creator_realpath() {
 # Clean up temporary directory
 function creator_action_1() {
 	echo "Clean up temporary directories"
-	rm -f -r "$1/eyeOS/tmp/*"
-	touch "$1/eyeOS/tmp/.htaccess"
+	rm -f -r "$1/system/tmp/*"
+	touch "$1/system/tmp/.htaccess"
 }
 
 ##
@@ -193,7 +193,7 @@ function creator_action_3() {
 function creator_action_4() {
 	echo "Create package.eyepackage"
 	cd "$1"
-	tar --create --file="$2/package.eyepackage" --gzip --exclude '.git*' "./eyeOS"
+	tar --create --file="$2/package.eyepackage" --gzip --exclude '.git*' "./system"
 	cd - > /dev/null
 }
 
