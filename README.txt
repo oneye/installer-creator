@@ -13,9 +13,7 @@ Copyright © 2005 - 2010 eyeos Team (team@eyeos.org)
 
 These scripts can be used in bash or cmd:
 
-1. Edit "creator.sh" and change "oneye_path" and "installer_path", directing
-   to either the oneye repository or the installer repository.
-2. Now run "./creator.sh" in console and follow instructions over there.
+Run "./creator.sh" in console and follow its instructions.
 
 -> On Windows systems you will need to have Cygwin installed. Afterwards
    double-clicking "creator.cmd" makes it.

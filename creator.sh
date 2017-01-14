@@ -17,7 +17,7 @@ creator.sh (-h|--help)
   Print this help and exit
 
 creator.sh ONEYE_PATH INSTALLER_PATH
-  where ONEYE_PATH is a path to the oneye system folder
+  where ONEYE_PATH is a path to the oneye folder
   where INSTALLER_PATH is a path to the oneye installer folder
 EOF
 }
